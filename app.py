@@ -74,7 +74,7 @@ def fetch_vehicle_details(vehicle_no):
             url, 
             data=json.dumps(payload), 
             headers=DEFAULT_HEADERS,
-            timeout=10
+            timeout=30
         )
         response.raise_for_status()
         return response.json()
